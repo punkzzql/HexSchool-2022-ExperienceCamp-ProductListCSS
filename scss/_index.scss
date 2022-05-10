@@ -2,30 +2,24 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    outline: 1px solid red;
+    //outline: 1px solid red;
 }
 
 
 $main-color: #3F5D45;
 
-.panel {
-    width: 1024px;
-    margin: 0 auto;
-}
-
 .wrap {
     width: 940px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column;
 }
 
 .header {
     margin-top: 30px;
     margin-bottom: 30px;
     display: flex;
-    position: relative;
     justify-content: space-between;
+    align-items: center;
+    position: relative;
 }
 
 .header-logo {
@@ -41,23 +35,26 @@ $main-color: #3F5D45;
 }
 
 .header-nav {
-    display: inline-flex;
+    display: flex;
     justify-content: space-between;
-    margin-right: 104px;
-    width: 215px+20;
-    height: 40px;
+    margin-right: 104px-25;
+    width: 215px+50;
 
     a {
         display: block;
+        padding: 10px 25px;
+        border-radius: 1em;
         text-decoration: none;
         color: $main-color;
-        //font: normal normal 600 16px/73px ;
         font-size: 16px;
         font-weight: 600;
         font-family: PingFang TC;
-        line-height: 22px;
         text-align: center;
-        padding: 10px 10px 8px 10px;
+        line-height: 20px;
+
+        &:hover {
+            background-color: #EAF0ED;
+        }
     }
 }
 

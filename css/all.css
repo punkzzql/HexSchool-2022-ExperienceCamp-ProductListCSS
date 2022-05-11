@@ -141,6 +141,12 @@ img.banner {
   height: 496px;
 }
 
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .aside {
   width: 300px;
   margin-right: 20px;
@@ -179,7 +185,159 @@ img.banner {
   padding: 15px 64px;
 }
 
+.category-list__item a:hover {
+  background-color: #EAF0ED;
+}
+
 .category-list__item:first-child {
   background: #EAF0ED 0% 0% no-repeat padding-box;
+}
+
+.card-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 620px;
+}
+
+.card-item {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.tag {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: PingFang TC;
+  color: #EAF0ED;
+  background-color: #3F5D45;
+  width: 36px;
+  height: 107px;
+  padding: 10px;
+  line-height: 20px;
+}
+
+a.add-to-favorite {
+  display: block;
+  position: absolute;
+  top: 19px;
+  right: 22px;
+}
+
+img.add-to-favorite {
+  display: block;
+  width: 20px;
+  height: 18px;
+}
+
+.card-item__thumbnail {
+  width: 300px;
+  height: 315px;
+}
+
+.card-item__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid #EAF0ED;
+  width: 300px;
+  height: 56px;
+}
+
+.card-item__info .card-item__info__product-name {
+  font-size: 20px;
+  font-weight: 300;
+  font-family: PingFang TC;
+  color: #3F5D45;
+  text-align: center;
+  line-height: 28px;
+  width: 173px;
+  height: 56px;
+  padding: 14px 33px;
+}
+
+.card-item__info .card-item__info__product-price {
+  font-size: 20px;
+  font-weight: 600;
+  font-family: PingFang TC;
+  color: #3F5D45;
+  text-align: center;
+  line-height: 28px;
+  width: 127px;
+  height: 56px;
+  padding: 14px 20px 14px 25px;
+  border-left: 1px solid #EAF0ED;
+}
+
+.add-to-shopping-cart {
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  line-height: 33px;
+  padding: 16px 90px;
+  font-size: 24px;
+  font-weight: 600;
+  font-family: PingFang TC;
+  color: #3F5D45;
+  background-color: #EAF0ED;
+}
+
+.pagination-wrap {
+  margin-top: 10px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pagination-item a {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border: 1px solid #EAF0ED;
+  text-align: center;
+  line-height: 60px;
+  color: #3F5D45;
+  font-size: 20px;
+  font-weight: 300;
+  font-family: PingFang TC;
+  text-decoration: none;
+}
+
+.pagination-item a:hover {
+  background-color: #EAF0ED;
+}
+
+.pagination-item:nth-child(2) a {
+  background-color: #3F5D45;
+  color: #EAF0ED;
+}
+
+.previous-page {
+  width: 18px;
+  height: 18px;
+}
+
+.next-page {
+  width: 18px;
+  height: 18px;
 }
 /*# sourceMappingURL=all.css.map */

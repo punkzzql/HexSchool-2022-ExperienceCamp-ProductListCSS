@@ -82,7 +82,9 @@ img.banner {
     height: 496px;
 }
 
-.main {}
+.main {
+    display: flex;
+}
 
 .aside {
     width: 300px;
@@ -117,9 +119,150 @@ img.banner {
         text-decoration: none;
         border: 1px solid #EAF0ED;
         padding: 15px 64px;
+
+        &:hover {
+            background-color: #EAF0ED;
+        }
     }
 
     &:first-child {
         background: #EAF0ED 0% 0% no-repeat padding-box;
     }
+}
+
+.card-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 620px;
+}
+
+.card-item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.tag {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: PingFang TC;
+    color: #EAF0ED;
+    background-color: #3F5D45;
+    width: 36px;
+    height: 107px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+a.add-to-favorite {
+    display: block;
+    position: absolute;
+    top: 19px;
+    right: 22px;
+}
+
+img.add-to-favorite {
+    display: block;
+    width: 20px;
+    height: 18px;
+}
+
+.card-item__thumbnail {
+    width: 300px;
+    height: 315px;
+}
+
+.card-item__info {
+    display: flex;
+    border: 1px solid #EAF0ED;
+    width: 300px;
+    height: 56px;
+
+    .card-item__info__product-name {
+        font-size: 20px;
+        font-weight: 300;
+        font-family: PingFang TC;
+        color: $main-color;
+        text-align: center;
+        line-height: 28px;
+        width: 300px-127;
+        height: 56px;
+        padding: 14px 33px;
+    }
+
+    .card-item__info__product-price {
+        font-size: 20px;
+        font-weight: 600;
+        font-family: PingFang TC;
+        color: $main-color;
+        text-align: center;
+        line-height: 28px;
+        width: 127px;
+        height: 56px;
+        padding: 14px 20px 14px 25px;
+        border-left: 1px solid #EAF0ED;
+    }
+}
+
+.add-to-shopping-cart {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 33px;
+    padding: 16px 90px;
+    font-size: 24px;
+    font-weight: 600;
+    font-family: PingFang TC;
+    color: $main-color;
+    background-color: #EAF0ED;
+}
+
+.pagination-wrap {
+    margin-top: 10px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pagination-item {
+    a {
+        display: block;
+        width: 60px;
+        height: 60px;
+        border: 1px solid #EAF0ED;
+        text-align: center;
+        line-height: 60px;
+        color: $main-color;
+        font-size: 20px;
+        font-weight: 300;
+        font-family: PingFang TC;
+        text-decoration: none;
+
+        &:hover {
+            background-color: #EAF0ED;
+        }
+    }
+
+    &:nth-child(2) {
+        a {
+            background-color: $main-color;
+            color: #EAF0ED;
+        }
+    }
+}
+
+
+.previous-page {
+    width: 18px;
+    height: 18px;
+}
+
+.next-page {
+    width: 18px;
+    height: 18px;
 }
